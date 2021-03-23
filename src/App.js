@@ -1,10 +1,18 @@
 import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Fragment } from 'react';
+import Header from './components/Header';
+import HomeScreen from './screens/HomeScreen';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>Hello</h1>
-    </div>
+    <Router>
+      <Fragment>
+        <Header />
+
+        <Route path='/' component={HomeScreen} exact />
+      </Fragment>
+    </Router>
   );
 }
 
