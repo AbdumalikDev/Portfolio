@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react';
+import Header from '../components/Header';
 import './AboutScreen.scss';
 
 const AboutScreen = () => {
   return (
     <Fragment>
+      <Header current='about' />
       <main id='about'>
         <h1 className='lg-heading'>
           About <span className='text-secondary'>Me</span>

@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 
 const HomeScreen = () => {
   return (
     <Fragment>
+      <Header current='home' />
       <main id='home'>
         <h1 className='lg-heading'>
           Abdumalik <span className='text-secondary'>Khojimirzaev</span>

@@ -11,8 +11,6 @@ function App() {
   return (
     <Router>
       <Fragment>
-        <Header />
-
         <Route path='/' component={HomeScreen} exact />
         <Route path='/about' component={AboutScreen} />
         <Route path='/contact' component={ContactScreen} />

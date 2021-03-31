@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 import './ProjectScreen.scss';
 
 const ProjectScreen = () => {
   return (
     <Fragment>
+      <Header current='projects' />
       <main id='projects'>
         <h1 className='lg-heading'>
           My <span className='text-secondary'>Work</span>

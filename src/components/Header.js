@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
+const Header = ({ current }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const handleClick = () => {
@@ -25,23 +25,53 @@ const Header = () => {
         </div>
         <ul className={showMenu ? 'menu-nav show' : 'menu-nav'}>
           <li
-            className={showMenu ? 'nav-item current show' : 'nav-item current'}
+            className={
+              showMenu
+                ? current === 'home'
+                  ? 'nav-item current show'
+                  : 'nav-item show'
+                : 'nav-item current'
+            }
           >
             <Link to='/' className='nav-link'>
               Home
             </Link>
           </li>
-          <li className={showMenu ? 'nav-item show' : 'nav-item'}>
+          <li
+            className={
+              showMenu
+                ? current === 'projects'
+                  ? 'nav-item current show'
+                  : 'nav-item show'
+                : 'nav-item current'
+            }
+          >
             <Link to='/projects' className='nav-link'>
               My Projects
             </Link>
           </li>
-          <li className={showMenu ? 'nav-item show' : 'nav-item'}>
+          <li
+            className={
+              showMenu
+                ? current === 'about'
+                  ? 'nav-item current show'
+                  : 'nav-item show'
+                : 'nav-item current'
+            }
+          >
             <Link to='/about' className='nav-link'>
               About
             </Link>
           </li>
-          <li className={showMenu ? 'nav-item show' : 'nav-item'}>
+          <li
+            className={
+              showMenu
+                ? current === 'contact'
+                  ? 'nav-item current show'
+                  : 'nav-item show'
+                : 'nav-item current'
+            }
+          >
             <Link to='/contact' className='nav-link'>
               Contact Me
             </Link>
