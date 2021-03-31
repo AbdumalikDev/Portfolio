@@ -1,10 +1,40 @@
 $primary-color: #444;
 $secondary-color: #eece1a;
-$home-image: url(../src/images/background.jpg);
-$background-opacity: 0.9;
+$show-home-img: false;
+$home-image: url(./images/background.jpg);
+$background-opacity: 0.8;
 
 @mixin easeOut {
   transition: all 0.4s ease-out;
+}
+
+@mixin background {
+  @if $show-home-img {
+    & {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: rgba($primary-color, $background-opacity);
+      }
+    }
+  }
+}
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
 }
 
 * {
@@ -12,11 +42,9 @@ $background-opacity: 0.9;
 }
 
 body {
+  @include background;
   background-color: $primary-color;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    $home-image;
-  background-size: cover;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
   font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -57,7 +85,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -93,7 +121,7 @@ main {
     width: 28px;
     height: 3px;
     margin-bottom: 5px;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -196,7 +224,7 @@ main {
     padding: 1rem 0;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
+    color: set-text-color($primary-color);
     @include easeOut();
 
     &:hover {
@@ -211,3 +239,64 @@ main {
     transition-delay: $x * 0.1s;
   }
 }
+
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    main#home h1 {
+      margin-top: 10vh;
+    }
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 809px) {
+    main {
+      align-items: center;
+      text-align: center;
+
+      .lg-heading {
+        line-height: 1;
+        margin-bottom: 1rem;
+      }
+    }
+
+    ul.menu-nav,
+    div.menu-branding {
+      float: none;
+      width: 100%;
+      min-height: 0;
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .menu-nav {
+      height: 75vh;
+      transform: translate3d(-100%, 0, 0);
+      font-size: 24px;
+    }
+
+    .menu-branding {
+      height: 25vh;
+      transform: translate3d(100%, 0, 0);
+
+      .portrait {
+        height: 150px;
+        width: 150px;
+      }
+    }
+  }
+}
+@mixin mediaLg {
+  @media screen and (min-width: 810px) and (max-width: 1170px) {
+  }
+}
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+  }
+}
+
+@include mediaSm();
+@include mediaMd();
+@include mediaLg();
+@include mediaXl();

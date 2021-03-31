@@ -1,0 +1,53 @@
+$primary-color: #444;
+$secondary-color: #eece1a;
+$show-home-img: false;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+.about-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio bio';
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid $secondary-color;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+}
+
+.main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 809px) {
+    .about-info {
+      grid-template-areas:
+        'bioimage'
+        'bio';
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@include mediaMd();

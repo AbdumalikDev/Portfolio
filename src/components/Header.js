@@ -32,17 +32,17 @@ const Header = () => {
             </Link>
           </li>
           <li className={showMenu ? 'nav-item show' : 'nav-item'}>
-            <Link to='/' className='nav-link'>
+            <Link to='/projects' className='nav-link'>
               My Projects
             </Link>
           </li>
           <li className={showMenu ? 'nav-item show' : 'nav-item'}>
-            <Link to='/' className='nav-link'>
+            <Link to='/about' className='nav-link'>
               About
             </Link>
           </li>
           <li className={showMenu ? 'nav-item show' : 'nav-item'}>
-            <Link to='/' className='nav-link'>
+            <Link to='/contact' className='nav-link'>
               Contact Me
             </Link>
           </li>

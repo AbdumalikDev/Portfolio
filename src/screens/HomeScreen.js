@@ -6,7 +6,7 @@ const HomeScreen = () => {
     <Fragment>
       <main id='home'>
         <h1 className='lg-heading'>
-          Abdumalik <span className='text-secondary'>Khojimirzaev</span>{' '}
+          Abdumalik <span className='text-secondary'>Khojimirzaev</span>
         </h1>
         <h2 className='sm-heading'>
           FullStack Web Developer, MERN Stack Developer, Frontend & Backend
