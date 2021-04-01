@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Header from '../components/Header';
-import './ContactScreen.scss';
 
 const ContactScreen = () => {
   return (
@@ -15,7 +14,7 @@ const ContactScreen = () => {
         <div className='boxes'>
           <div>
             <span className='text-secondary'>Email: </span>
-            hojimirzaev abdumalik@gmail.com
+            hojimirzaevabdumalik@gmail.com
           </div>
           <div>
             <span className='text-secondary'>Phone: </span>

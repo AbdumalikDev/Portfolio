@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react';
 import Header from '../components/Header';
-import './AboutScreen.scss';
 
 const AboutScreen = () => {
   return (
@@ -21,10 +20,12 @@ const AboutScreen = () => {
           <div className='bio'>
             <h3 className='text-secondary'>BIO</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Necessitatibus, enim quidem alias distinctio tenetur dolor
-              voluptates doloremque deleniti quae ipsum recusandae odit sit
-              animi optio temporibus dignissimos odio eius? Nihil.
+              I am FullStack Web Developer. Nowadays, I am working as a
+              freelancer on Upwork. I am a second-year student at TUIT in
+              Software Engineering faculty. I am enthuastic to learn new things.
+              And I know MERN stack. Clearly, I work on HTML5, CSS3, JavaScript,
+              ReactJs, NodeJs, ExpressJS, MongoDB technologies and other
+              frameworks such as Bootstrap, JQuery...
             </p>
           </div>
         </div>
