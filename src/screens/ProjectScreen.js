@@ -14,16 +14,21 @@ const ProjectScreen = () => {
 
         <div className='projects'>
           <div className='item'>
-            <a href='https://sheltered-taiga-34517.herokuapp.com/'>
+            <a
+              type='_blank'
+              href='https://sheltered-taiga-34517.herokuapp.com/'
+            >
               <img src='/images/project1.png' alt='project1' />
             </a>
             <a
+              type='_blank'
               href='https://sheltered-taiga-34517.herokuapp.com/'
               className='btn-light'
             >
               <i className='fas fa-eye'></i> Project
             </a>
             <a
+              type='_blank'
               href='https://github.com/AbdumalikDev/ToDoListApp'
               className='btn-dark'
             >
@@ -31,13 +36,14 @@ const ProjectScreen = () => {
             </a>
           </div>
           <div className='item'>
-            <a href='/onlinemarket'>
+            <a type='_blank' href='/onlinemarket'>
               <img src='/images/project2.png' alt='project2' />
             </a>
-            <a href='/onlinemarket' className='btn-light'>
+            <a type='_blank' href='/onlinemarket' className='btn-light'>
               <i className='fas fa-eye'></i> Project
             </a>
             <a
+              type='_blank'
               href='https://github.com/AbdumalikDev/OnlineShopFront'
               className='btn-dark'
             >

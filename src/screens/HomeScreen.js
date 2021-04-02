@@ -15,18 +15,24 @@ const HomeScreen = () => {
           Developer
         </h2>
         <div className='icons'>
-          <Link to='https://t.me/mern_dev'>
+          <a type='_blank' href='https://t.me/mern_dev'>
             <i className='fab fa-telegram fa-2x'></i>
-          </Link>
-          <Link to='https://www.facebook.com/abdumalik.hojimirzaev/'>
+          </a>
+          <a
+            type='_blank'
+            href='https://www.facebook.com/abdumalik.hojimirzaev/'
+          >
             <i className='fab fa-facebook fa-2x'></i>
-          </Link>
-          <Link to='https://www.linkedin.com/in/abdumalik-khojimirzaev-4216a3202/'>
+          </a>
+          <a
+            type='_blank'
+            href='https://www.linkedin.com/in/abdumalik-khojimirzaev-4216a3202/'
+          >
             <i className='fab fa-linkedin fa-2x'></i>
-          </Link>
-          <Link to='https://github.com/AbdumalikDev'>
+          </a>
+          <a type='_blank' href='https://github.com/AbdumalikDev'>
             <i className='fab fa-github fa-2x'></i>
-          </Link>
+          </a>
         </div>
       </main>
     </Fragment>
