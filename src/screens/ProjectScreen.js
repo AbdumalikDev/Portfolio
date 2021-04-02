@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Link } from 'react-router-dom';
+import { a } from 'react-router-dom';
 import Header from '../components/Header';
 
 const ProjectScreen = () => {
@@ -14,35 +14,35 @@ const ProjectScreen = () => {
 
         <div className='projects'>
           <div className='item'>
-            <Link to='https://sheltered-taiga-34517.herokuapp.com/'>
+            <a href='https://sheltered-taiga-34517.herokuapp.com/'>
               <img src='/images/project1.png' alt='project1' />
-            </Link>
-            <Link
-              to='https://sheltered-taiga-34517.herokuapp.com/'
+            </a>
+            <a
+              href='https://sheltered-taiga-34517.herokuapp.com/'
               className='btn-light'
             >
               <i className='fas fa-eye'></i> Project
-            </Link>
-            <Link
-              to='https://github.com/AbdumalikDev/ToDoListApp'
+            </a>
+            <a
+              href='https://github.com/AbdumalikDev/ToDoListApp'
               className='btn-dark'
             >
               <i className='fab fa-github'></i> GitHub
-            </Link>
+            </a>
           </div>
           <div className='item'>
-            <Link to='/onlinemarket'>
+            <a href='/onlinemarket'>
               <img src='/images/project2.png' alt='project2' />
-            </Link>
-            <Link to='/onlinemarket' className='btn-light'>
+            </a>
+            <a href='/onlinemarket' className='btn-light'>
               <i className='fas fa-eye'></i> Project
-            </Link>
-            <Link
-              to='https://github.com/AbdumalikDev/OnlineShopFront'
+            </a>
+            <a
+              href='https://github.com/AbdumalikDev/OnlineShopFront'
               className='btn-dark'
             >
               <i className='fab fa-github'></i> GitHub
-            </Link>
+            </a>
           </div>
         </div>
       </main>
