@@ -24,7 +24,7 @@ const ProjectScreen = () => {
               <i className='fas fa-eye'></i> Project
             </Link>
             <Link
-              to='https://github.com/AbdumalikDev/OnlineShopFront'
+              to='https://github.com/AbdumalikDev/ToDoListApp'
               className='btn-dark'
             >
               <i className='fab fa-github'></i> GitHub
