@@ -15,7 +15,7 @@ const ProjectScreen = () => {
         <div className='projects'>
           <div className='item'>
             <Link to=''>
-              <img src='/images/project.png' alt='project1' />
+              <img src='/images/project1.png' alt='project1' />
             </Link>
             <Link to='' className='btn-light'>
               <i className='fas fa-eye'></i> Project
@@ -26,7 +26,7 @@ const ProjectScreen = () => {
           </div>
           <div className='item'>
             <Link to=''>
-              <img src='/images/project.png' alt='project2' />
+              <img src='/images/project2.png' alt='project2' />
             </Link>
             <Link to='' className='btn-light'>
               <i className='fas fa-eye'></i> Project
