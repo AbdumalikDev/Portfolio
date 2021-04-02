@@ -14,24 +14,33 @@ const ProjectScreen = () => {
 
         <div className='projects'>
           <div className='item'>
-            <Link to=''>
+            <Link to='https://sheltered-taiga-34517.herokuapp.com/'>
               <img src='/images/project1.png' alt='project1' />
             </Link>
-            <Link to='' className='btn-light'>
+            <Link
+              to='https://sheltered-taiga-34517.herokuapp.com/'
+              className='btn-light'
+            >
               <i className='fas fa-eye'></i> Project
             </Link>
-            <Link className='btn-dark'>
+            <Link
+              to='https://github.com/AbdumalikDev/OnlineShopFront'
+              className='btn-dark'
+            >
               <i className='fab fa-github'></i> GitHub
             </Link>
           </div>
           <div className='item'>
-            <Link to=''>
+            <Link to='/onlinemarket'>
               <img src='/images/project2.png' alt='project2' />
             </Link>
-            <Link to='' className='btn-light'>
+            <Link to='/onlinemarket' className='btn-light'>
               <i className='fas fa-eye'></i> Project
             </Link>
-            <Link className='btn-dark'>
+            <Link
+              to='https://github.com/AbdumalikDev/OnlineShopFront'
+              className='btn-dark'
+            >
               <i className='fab fa-github'></i> GitHub
             </Link>
           </div>

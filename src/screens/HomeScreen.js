@@ -15,16 +15,16 @@ const HomeScreen = () => {
           Developer
         </h2>
         <div className='icons'>
-          <Link to='/'>
+          <Link to='https://t.me/mern_dev'>
             <i className='fab fa-telegram fa-2x'></i>
           </Link>
-          <Link to='/'>
+          <Link to='https://www.facebook.com/abdumalik.hojimirzaev/'>
             <i className='fab fa-facebook fa-2x'></i>
           </Link>
-          <Link to='/'>
+          <Link to='https://www.linkedin.com/in/abdumalik-khojimirzaev-4216a3202/'>
             <i className='fab fa-linkedin fa-2x'></i>
           </Link>
-          <Link to='/'>
+          <Link to='https://github.com/AbdumalikDev'>
             <i className='fab fa-github fa-2x'></i>
           </Link>
         </div>

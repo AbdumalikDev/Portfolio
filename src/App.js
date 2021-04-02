@@ -6,6 +6,7 @@ import HomeScreen from './screens/HomeScreen';
 import AboutScreen from './screens/AboutScreen';
 import ContactScreen from './screens/ContactScreen';
 import ProjectScreen from './screens/ProjectScreen';
+import OnlineMarket from './screens/OnlineMarket';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about' component={AboutScreen} />
         <Route path='/contact' component={ContactScreen} />
         <Route path='/projects' component={ProjectScreen} />
+        <Route path='/onlinemarket' component={OnlineMarket} />
       </Fragment>
     </Router>
   );
