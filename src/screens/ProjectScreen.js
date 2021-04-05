@@ -44,7 +44,7 @@ const ProjectScreen = () => {
             </a>
             <a
               type='_blank'
-              href='https://github.com/AbdumalikDev/OnlineShopFront'
+              href='https://github.com/AbdumalikDev/OnlineShop'
               className='btn-dark'
             >
               <i className='fab fa-github'></i> GitHub
