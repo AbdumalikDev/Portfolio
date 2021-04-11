@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { a } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 
 const ProjectScreen = () => {
@@ -14,41 +14,41 @@ const ProjectScreen = () => {
 
         <div className='projects'>
           <div className='item'>
-            <a
+            <Link
               type='_blank'
-              href='https://sheltered-taiga-34517.herokuapp.com/'
+              to={{ pathname: 'https://sheltered-taiga-34517.herokuapp.com' }}
             >
               <img src='/images/project1.png' alt='project1' />
-            </a>
-            <a
+            </Link>
+            <Link
               type='_blank'
-              href='https://sheltered-taiga-34517.herokuapp.com/'
+              to={{ pathname: 'https://sheltered-taiga-34517.herokuapp.com' }}
               className='btn-light'
             >
               <i className='fas fa-eye'></i> Project
-            </a>
-            <a
+            </Link>
+            <Link
               type='_blank'
-              href='https://github.com/AbdumalikDev/ToDoListApp'
+              to={{ pathname: 'https://github.com/AbdumalikDev/ToDoListApp' }}
               className='btn-dark'
             >
               <i className='fab fa-github'></i> GitHub
-            </a>
+            </Link>
           </div>
           <div className='item'>
-            <a type='_blank' href='/onlinemarket'>
+            <Link type='_blank' to='/onlinemarket'>
               <img src='/images/project2.png' alt='project2' />
-            </a>
-            <a type='_blank' href='/onlinemarket' className='btn-light'>
+            </Link>
+            <Link type='_blank' to='/onlinemarket' className='btn-light'>
               <i className='fas fa-eye'></i> Project
-            </a>
-            <a
+            </Link>
+            <Link
               type='_blank'
-              href='https://github.com/AbdumalikDev/OnlineShop'
+              to={{ pathname: 'https://github.com/AbdumalikDev/OnlineShop' }}
               className='btn-dark'
             >
               <i className='fab fa-github'></i> GitHub
-            </a>
+            </Link>
           </div>
         </div>
       </main>

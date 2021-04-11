@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 
 const HomeScreen = () => {
@@ -14,24 +15,30 @@ const HomeScreen = () => {
           Developer
         </h2>
         <div className='icons'>
-          <a type='_blank' href='https://t.me/mern_dev'>
+          <Link type='_blank' to={{ pathname: 'https://t.me/mern_dev' }}>
             <i className='fab fa-telegram fa-2x'></i>
-          </a>
-          <a
+          </Link>
+          <Link
             type='_blank'
-            href='https://www.facebook.com/abdumalik.hojimirzaev/'
+            to={{ pathname: 'https://www.facebook.com/abdumalik.hojimirzaev/' }}
           >
             <i className='fab fa-facebook fa-2x'></i>
-          </a>
-          <a
+          </Link>
+          <Link
             type='_blank'
-            href='https://www.linkedin.com/in/abdumalik-khojimirzaev-4216a3202/'
+            to={{
+              pathname:
+                'https://www.linkedin.com/in/abdumalik-khojimirzaev-4216a3202/',
+            }}
           >
             <i className='fab fa-linkedin fa-2x'></i>
-          </a>
-          <a type='_blank' href='https://github.com/AbdumalikDev'>
+          </Link>
+          <Link
+            type='_blank'
+            to={{ pathname: 'https://github.com/AbdumalikDev' }}
+          >
             <i className='fab fa-github fa-2x'></i>
-          </a>
+          </Link>
         </div>
       </main>
     </Fragment>
