@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import Header from '../components/Header';
+import Footer from '../components/layout/Footer';
+import Header from '../components/layout/Header';
 
 const ContactScreen = () => {
   return (
@@ -26,7 +27,7 @@ const ContactScreen = () => {
           </div>
         </div>
       </main>
-      <footer className='main-footer'>Copyright &copy; 2021</footer>
+      <Footer />
     </Fragment>
   );
 };
